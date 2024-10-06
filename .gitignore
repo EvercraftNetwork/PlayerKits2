@@ -10,7 +10,8 @@
 
 .mtj.tmp/
 
-
+.gradle
+build
 *.jar
 *.war
 *.nar
