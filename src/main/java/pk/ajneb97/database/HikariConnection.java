@@ -16,6 +16,7 @@ public class HikariConnection {
         config.addDataSourceProperty("leakDetectionThreshold", "true");
         config.addDataSourceProperty("verifyServerCertificate", "false");
         config.addDataSourceProperty("useSSL", "false");
+        config.addDataSourceProperty("allowPublicKeyRetrieval","true");
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.setConnectionTimeout(5000);
         hikari = new HikariDataSource(config);
